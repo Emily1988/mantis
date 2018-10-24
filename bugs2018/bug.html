@@ -1,0 +1,437 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="http://172.32.252.27/mantisbt/css/default.css" />
+	<script type="text/javascript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Expires" content="Tue, 23 Oct 2018 04:01:07 GMT" />
+	<link rel="shortcut icon" href="/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://172.32.252.27/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://172.32.252.27/mantisbt/browser_search_plugin.php?type=id" />	<title>0019847: V3.3.180516版本配置软件，选择重写Bootloader升级设置，从TI5.0平台软件升级到TI8.0平台后，机器挂掉 - 缺陷跟踪管理系统</title>
+<script type="text/javascript" src="/mantisbt/javascript/min/common.js"></script>
+<script type="text/javascript">var loading_lang = "正在载入...";</script><script type="text/javascript" src="/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+<div class="center"><span class="pagetitle">缺陷跟踪管理系统</span></div>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="缺陷跟踪管理系统" src="/mantisbt/images/mantis_logo.png" /></a></div><table class="hide"><tr><td class="login-info-left">您好: <span class="italic">dywu</span> <span class="small">(DQA-吴丹阳 - 经理)</span></td><td class="login-info-middle"><span class="italic">2018-10-23 12:01:07</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="/mantisbt/set_project.php">项目: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0" selected="selected" >所有项目</option>
+<option value="76">1客诉问题</option>
+<option value="76;80">&#160;&raquo; 3LCD客诉</option>
+<option value="76;84">&#160;&raquo; 商务机客诉</option>
+<option value="76;78">&#160;&raquo; 工程机客诉</option>
+<option value="76;83">&#160;&raquo; 影院光源客诉</option>
+<option value="76;77">&#160;&raquo; 微投客诉</option>
+<option value="76;82">&#160;&raquo; 拼墙客诉</option>
+<option value="76;79">&#160;&raquo; 教育机客诉</option>
+<option value="76;81">&#160;&raquo; 激光电视客诉</option>
+<option value="11">3LCD</option>
+<option value="11;19">&#160;&raquo; E1/E3普通机系列</option>
+<option value="11;32">&#160;&raquo; E1智能家用机 APUS-L2500</option>
+<option value="11;27">&#160;&raquo; E1智能教育机 AL-LH110ST</option>
+<option value="11;30">&#160;&raquo; E3 LOWCOST普通机系列</option>
+<option value="11;61">&#160;&raquo; E3影吧</option>
+<option value="11;94">&#160;&raquo; E4普通机系列</option>
+<option value="11;59">&#160;&raquo; S3普通机系列</option>
+<option value="98">DLP电视</option>
+<option value="98;71">&#160;&raquo; A30E切换DMD</option>
+<option value="98;96">&#160;&raquo; FM05</option>
+<option value="98;97">&#160;&raquo; FM10</option>
+<option value="98;56">&#160;&raquo; FM15</option>
+<option value="98;89">&#160;&raquo; FM154K</option>
+<option value="98;85">&#160;&raquo; FM18</option>
+<option value="98;65">&#160;&raquo; FM20</option>
+<option value="98;95">&#160;&raquo; FM30P</option>
+<option value="98;99">&#160;&raquo; H1激光电视</option>
+<option value="98;86">&#160;&raquo; VA-LT002/泽宝</option>
+<option value="98;23">&#160;&raquo; 激光电视30E</option>
+<option value="7">L1 1080P</option>
+<option value="8">L1 WUXGA</option>
+<option value="10">L1 XGA</option>
+<option value="87">U20U(4K光机)</option>
+<option value="100">商教机系列</option>
+<option value="100;44">&#160;&raquo; E2 教育机</option>
+<option value="100;44;68">&#160;&#160;&raquo;&raquo; E2 希沃</option>
+<option value="100;44;22">&#160;&#160;&raquo;&raquo; E2升级版TI5.0平台</option>
+<option value="100;44;67">&#160;&#160;&raquo;&raquo; E2升级版TI8.0平台</option>
+<option value="100;70">&#160;&raquo; S1系列</option>
+<option value="100;70;20">&#160;&#160;&raquo;&raquo; S1商教机TI5.0平台</option>
+<option value="100;70;66">&#160;&#160;&raquo;&raquo; S1商教机TI8.0平台</option>
+<option value="100;70;62">&#160;&#160;&raquo;&raquo; 中器S1</option>
+<option value="100;70;69">&#160;&#160;&raquo;&raquo; 清华S1</option>
+<option value="45">工程机</option>
+<option value="45;14">&#160;&raquo; 工程机 620</option>
+<option value="45;14;4">&#160;&#160;&raquo;&raquo; FH620</option>
+<option value="45;14;2">&#160;&#160;&raquo;&raquo; FU620</option>
+<option value="45;14;3">&#160;&#160;&raquo;&raquo; FX620</option>
+<option value="45;6">&#160;&raquo; 工程机 L系列</option>
+<option value="45;6;7">&#160;&#160;&raquo;&raquo; L1 1080P</option>
+<option value="45;6;8">&#160;&#160;&raquo;&raquo; L1 WUXGA</option>
+<option value="45;6;10">&#160;&#160;&raquo;&raquo; L1 XGA</option>
+<option value="45;6;74">&#160;&#160;&raquo;&raquo; L2 更换DMD</option>
+<option value="45;6;5">&#160;&#160;&raquo;&raquo; L2 系列</option>
+<option value="45;6;9">&#160;&#160;&raquo;&raquo; L4</option>
+<option value="45;6;88">&#160;&#160;&raquo;&raquo; L5</option>
+<option value="45;1">&#160;&raquo; 工程机600系列（FU600/FH600/UH600）</option>
+<option value="46">影院光源</option>
+<option value="46;91">&#160;&raquo; S10</option>
+<option value="46;51">&#160;&raquo; X10</option>
+<option value="46;52">&#160;&raquo; X12</option>
+<option value="46;92">&#160;&raquo; X13</option>
+<option value="46;93">&#160;&raquo; X15</option>
+<option value="46;75">&#160;&raquo; X18-CP2215</option>
+<option value="46;47">&#160;&raquo; X20-SR515-BC11</option>
+<option value="46;48">&#160;&raquo; X24</option>
+<option value="46;54">&#160;&raquo; X25</option>
+<option value="46;53">&#160;&raquo; X28-N2000-BC11</option>
+<option value="46;90">&#160;&raquo; X33</option>
+<option value="46;49">&#160;&raquo; X35-N3200-BC11</option>
+<option value="46;55">&#160;&raquo; X40</option>
+<option value="46;50">&#160;&raquo; X60</option>
+<option value="34">微投</option>
+<option value="34;72">&#160;&raquo; A62C/S/D T968</option>
+<option value="34;41">&#160;&raquo; A62S/C/D/、A66H</option>
+<option value="34;64">&#160;&raquo; A63D/C</option>
+<option value="43">拼墙</option>
+<option value="43;31">&#160;&raquo; 机芯升级</option>
+<option value="43;26">&#160;&raquo; 超薄拼墙</option>
+</select> <input type="submit" class="button-small" value="切换" /></form><a href="http://172.32.252.27/mantisbt/issues_rss.php?username=dywu&amp;key=fab22a9d3364b13eabe4bc47c89a2ce9&amp;project_id=67"><img src="/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/mantisbt/set_project.php?project_id=0">所有项目</a> | <a href="/mantisbt/set_project.php?project_id=76">1客诉问题</a>: <a href="/mantisbt/set_project.php?project_id=76;80">3LCD客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;84">商务机客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;78">工程机客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;83">影院光源客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;77">微投客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;82">拼墙客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;79">教育机客诉</a>, <a href="/mantisbt/set_project.php?project_id=76;81">激光电视客诉</a> | <a href="/mantisbt/set_project.php?project_id=11">3LCD</a>: <a href="/mantisbt/set_project.php?project_id=11;19">E1/E3普通机系列</a>, <a href="/mantisbt/set_project.php?project_id=11;32">E1智能家用机 APUS-L2500</a>, <a href="/mantisbt/set_project.php?project_id=11;27">E1智能教育机 AL-LH110ST</a>, <a href="/mantisbt/set_project.php?project_id=11;30">E3 LOWCOST普通机系列</a>, <a href="/mantisbt/set_project.php?project_id=11;61">E3影吧</a>, <a href="/mantisbt/set_project.php?project_id=11;94">E4普通机系列</a>, <a href="/mantisbt/set_project.php?project_id=11;59">S3普通机系列</a> | <a href="/mantisbt/set_project.php?project_id=98">DLP电视</a>: <a href="/mantisbt/set_project.php?project_id=98;71">A30E切换DMD</a>, <a href="/mantisbt/set_project.php?project_id=98;96">FM05</a>, <a href="/mantisbt/set_project.php?project_id=98;97">FM10</a>, <a href="/mantisbt/set_project.php?project_id=98;56">FM15</a>, <a href="/mantisbt/set_project.php?project_id=98;89">FM154K</a>, <a href="/mantisbt/set_project.php?project_id=98;85">FM18</a>, <a href="/mantisbt/set_project.php?project_id=98;65">FM20</a>, <a href="/mantisbt/set_project.php?project_id=98;95">FM30P</a>, <a href="/mantisbt/set_project.php?project_id=98;99">H1激光电视</a>, <a href="/mantisbt/set_project.php?project_id=98;86">VA-LT002/泽宝</a>, <a href="/mantisbt/set_project.php?project_id=98;23">激光电视30E</a> | <a href="/mantisbt/set_project.php?project_id=7">L1 1080P</a> | <a href="/mantisbt/set_project.php?project_id=8">L1 WUXGA</a> | <a href="/mantisbt/set_project.php?project_id=10">L1 XGA</a> | <a href="/mantisbt/set_project.php?project_id=87">U20U(4K光机)</a> | <a href="/mantisbt/set_project.php?project_id=100">商教机系列</a>: <a href="/mantisbt/set_project.php?project_id=100;44">E2 教育机</a>: <a href="/mantisbt/set_project.php?project_id=100;44;68">E2 希沃</a>, <a href="/mantisbt/set_project.php?project_id=100;44;22">E2升级版TI5.0平台</a>, <a href="/mantisbt/set_project.php?project_id=100;44;67">E2升级版TI8.0平台</a>, <a href="/mantisbt/set_project.php?project_id=100;70">S1系列</a>: <a href="/mantisbt/set_project.php?project_id=100;70;20">S1商教机TI5.0平台</a>, <a href="/mantisbt/set_project.php?project_id=100;70;66">S1商教机TI8.0平台</a>, <a href="/mantisbt/set_project.php?project_id=100;70;62">中器S1</a>, <a href="/mantisbt/set_project.php?project_id=100;70;69">清华S1</a> | <a href="/mantisbt/set_project.php?project_id=45">工程机</a>: <a href="/mantisbt/set_project.php?project_id=45;14">工程机 620</a>: <a href="/mantisbt/set_project.php?project_id=45;14;4">FH620</a>, <a href="/mantisbt/set_project.php?project_id=45;14;2">FU620</a>, <a href="/mantisbt/set_project.php?project_id=45;14;3">FX620</a>, <a href="/mantisbt/set_project.php?project_id=45;6">工程机 L系列</a>: <a href="/mantisbt/set_project.php?project_id=45;6;7">L1 1080P</a>, <a href="/mantisbt/set_project.php?project_id=45;6;8">L1 WUXGA</a>, <a href="/mantisbt/set_project.php?project_id=45;6;10">L1 XGA</a>, <a href="/mantisbt/set_project.php?project_id=45;6;74">L2 更换DMD</a>, <a href="/mantisbt/set_project.php?project_id=45;6;5">L2 系列</a>, <a href="/mantisbt/set_project.php?project_id=45;6;9">L4</a>, <a href="/mantisbt/set_project.php?project_id=45;6;88">L5</a>, <a href="/mantisbt/set_project.php?project_id=45;1">工程机600系列（FU600/FH600/UH600）</a> | <a href="/mantisbt/set_project.php?project_id=46">影院光源</a>: <a href="/mantisbt/set_project.php?project_id=46;91">S10</a>, <a href="/mantisbt/set_project.php?project_id=46;51">X10</a>, <a href="/mantisbt/set_project.php?project_id=46;52">X12</a>, <a href="/mantisbt/set_project.php?project_id=46;92">X13</a>, <a href="/mantisbt/set_project.php?project_id=46;93">X15</a>, <a href="/mantisbt/set_project.php?project_id=46;75">X18-CP2215</a>, <a href="/mantisbt/set_project.php?project_id=46;47">X20-SR515-BC11</a>, <a href="/mantisbt/set_project.php?project_id=46;48">X24</a>, <a href="/mantisbt/set_project.php?project_id=46;54">X25</a>, <a href="/mantisbt/set_project.php?project_id=46;53">X28-N2000-BC11</a>, <a href="/mantisbt/set_project.php?project_id=46;90">X33</a>, <a href="/mantisbt/set_project.php?project_id=46;49">X35-N3200-BC11</a>, <a href="/mantisbt/set_project.php?project_id=46;55">X40</a>, <a href="/mantisbt/set_project.php?project_id=46;50">X60</a> | <a href="/mantisbt/set_project.php?project_id=34">微投</a>: <a href="/mantisbt/set_project.php?project_id=34;72">A62C/S/D T968</a>, <a href="/mantisbt/set_project.php?project_id=34;41">A62S/C/D/、A66H</a>, <a href="/mantisbt/set_project.php?project_id=34;64">A63D/C</a> | <a href="/mantisbt/set_project.php?project_id=43">拼墙</a>: <a href="/mantisbt/set_project.php?project_id=43;31">机芯升级</a>, <a href="/mantisbt/set_project.php?project_id=43;26">超薄拼墙</a></td></tr></table><br /><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/mantisbt/my_view_page.php">我的视图</a> | <a href="/mantisbt/view_all_bug_page.php">查看问题</a> | <a href="/mantisbt/bug_report_page.php">提交问题</a> | <a href="/mantisbt/changelog_page.php">变更日志</a> | <a href="/mantisbt/roadmap_page.php">路线图</a> | <a href="/mantisbt/summary_page.php">统计报表</a> | <a href="/mantisbt/manage_overview_page.php">管理</a> | <a href="/mantisbt/account_page.php">个人资料</a> | <a href="/mantisbt/logout_page.php">注销</a></td><td class="menu right nowrap"><form method="post" action="/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="问题 #" onfocus="if (this.value == '问题 #') this.value = ''" onblur="if (this.value == '') this.value = '问题 #'" />&#160;<input type="submit" class="button-small" value="前往" />&#160;</form></td></tr></table><div align="right"><small>最近浏览的: <a href="/mantisbt/view.php?id=19956" title="[已关闭] 派克斯R9 2BANK 320系列，高亮模式下电流值偏低，只有2.72A" class="resolved">0019956</a>, <a href="/mantisbt/view.php?id=20799" title="[已关闭] 0A Bank R98色轮机器，配置软件升级后出现2+7报错现象" class="resolved">0020799</a>, <a href="/mantisbt/view.php?id=23245" title="[已关闭] 0A Bank R98色轮软件，在工厂菜单将电流R调到极限值-23后，再调节G值到-6，电流均方根高达3.9A，机器会自动断电保护" class="resolved">0023245</a>, <a href="/mantisbt/view.php?id=23272" title="[已关闭] 派克斯PL-UX320C 9600波特率软件，按菜单键，菜单上的字体与菜单背景显示不同步，菜单字体的显示有约1秒的延迟。用户体验较差" class="resolved">0023272</a>, <a href="/mantisbt/view.php?id=18976" title="[已关闭] EDID里有些常用分辨率未添加，有些不常用的反而有添加，且有85Hz/120Hz的刷新率存在，建议删除" class="resolved">0018976</a></small></div><br /><table class="width100" cellspacing="1"><tr><td class="form-title" colspan="4">查看问题详情&#160;<span class="small"><span class="bracket-link">[&#160;<a href="#bugnotes">查看注释</a>&#160;]</span> <span class="bracket-link">[&#160;<a href="bug_reminder_page.php?bug_id=19847">发送提醒</a>&#160;]</span> </span></td><td class="right" colspan="2"><span class="small"><span class="bracket-link">[&#160;<a href="view.php?id=19847&amp;history=1#history">问题历史</a>&#160;]</span> </span><span class="small"><span class="bracket-link">[&#160;<a href="print_bug_page.php?bug_id=19847">打印</a>&#160;]</span> </span></td></tr><tr><td class="category" width="15%">编号</td><td class="category" width="20%">项目</td><td class="category" width="15%">分类</td><td class="category" width="15%">查看权限</td><td class="category" width="15%">报告日期</td><td class="category" width="20%">最后更新</td></tr><tr class="row-1"><td>0019847</td><td>E2升级版TI8.0平台</td><td>软件测试—其它功能模块</td><td>公开</td><td>2018-06-25 16:49</td><td>2018-07-23 10:29</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category">报告员</td><td>DQA-吴丹阳</td><td colspan="4">&#160;</td></tr><tr class="row-1"><td class="category">分派给</td><td>软件-许阳</td><td colspan="4">&#160;</td></tr><tr class="row-2"><td class="category">优先级</td><td>加急</td><td class="category">严重性</td><td>Maj</td><td class="category">出现频率</td><td>总是</td></tr><tr class="row-1"><td class="category">状态</td><td bgcolor="#c9ccc4">已关闭</td><td class="category">处理状况</td><td>已修正</td><td colspan="2">&#160;</td></tr><tr class="row-2"><td class="category">样机编号</td><td></td><td class="category">操作系统</td><td></td><td class="category">操作系统版本</td><td></td></tr><tr class="row-1"><td class="category">当前版本</td><td>配置V3.3.180516</td><td colspan="4">&#160;</td></tr><tr class="row-2"><td class="category">目标版本</td><td></td><td class="category">修正版本</td><td>配置V3.6.180628</td><td colspan="2">&#160;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">问题点摘要</td><td colspan="5">0019847: V3.3.180516版本配置软件，选择重写Bootloader升级设置，从TI5.0平台软件升级到TI8.0平台后，机器挂掉</td></tr><tr class="row-2"><td class="category">问题点描述</td><td colspan="5">V3.3.180516版本配置软件，选择重写Bootloader升级设置，从TI5.0平台软件升级到TI8.0平台后，机器挂掉</td></tr><tr class="row-1"><td class="category">标签</td><td colspan="5">没加标签.</td></tr><tr class="row-2"><td class="category">添加标签</td><td colspan="5">		<small>(用","分割)</small>
+		<form method="post" action="tag_attach.php">
+		<input type="hidden" name="tag_attach_token" value="20181023dd0a25bfe3105820436b37a530a0f6e0a3894cdc"/>		<input type="hidden" name="bug_id" value="19847" />
+				<input type="hidden" id="tag_separator" value="," />
+		<input type="text" name="tag_string" id="tag_string" size="40" value="" />
+		<select tabindex="1" name="tag_select" id="tag_select" onchange="tag_string_append( this.options[ this.selectedIndex ].title );">
+			<option value="0">现有标签</option><option value="25" title="待评审">待评审</option><option value="26" title="问题原因分析和解决对策不正确，请更新">问题原因分析和解决对策不正确，请更新</option>		</select>
+				<input type="submit" value="添加" class="button" />
+		</form>
+		</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">分析报告编码</td><td colspan="5"></td></tr><tr class="row-2"><td class="category">项目代码</td><td colspan="5"></td></tr><tr class="row-1"><td class="category">测试条件</td><td colspan="5"></td></tr><tr class="row-2"><td class="category">问题发生位置（1级）</td><td colspan="5">选择重写Bootloader升级设置，从TI5.0平台软件升级到TI8.0平台后，机器挂掉</td></tr><tr class="row-1"><td class="category">问题发生位置（2级）</td><td colspan="5">跨平台烧录</td></tr><tr class="row-2"><td class="category">原因分析</td><td colspan="5">擦除Bootloader时候，扇区大小设置存在问题</td></tr><tr class="row-1"><td class="category">解决对策</td><td colspan="5">修改擦除Bootloader时候，扇区大小为8kb</td></tr><tr class="row-2"><td class="category">测试报告编码</td><td colspan="5"></td></tr><tr class="row-1"><td class="category">改善结案日期</td><td colspan="5"></td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category"><a name="attachments" id="attachments" />附件</td><td colspan="5"></td></tr><tr align="center"><td align="center" colspan="6"><table><tr class="vcenter"><td class="center"><form method="post" action="bug_update_page.php">
+<input type="hidden" name="bug_update_page_token" value="2018102308311200d05d89b84421f356a58f6f14b821b8bf"/>	<input type="hidden" name="bug_id" value="19847" />
+	<input type="submit" class="button" value="编辑" />
+</form>
+</td><td class="center"><form method="post" action="bug_assign.php"><input type="hidden" name="bug_assign_token" value="201810233ec402511a123baf1bd4eb1cae5ad04171a7c042"/><input type="submit" class="button" value="分派给：" /> <select name="handler_id"><option value="3"  selected="selected" >[自身]</option><option value="3" >[报告员]</option><option value="0"></option><option value="63" >3LCD-潘乐</option><option value="257" >CQE-许康</option><option value="174" >DQA-亓森林</option><option value="104" >DQA-代尤娜</option><option value="3" >DQA-吴丹阳</option><option value="23" >DQA-廖志良</option><option value="232" >DQA-张海艳</option><option value="196" >DQA-易琪</option><option value="247" >DQA-朱业锦</option><option value="2" >DQA-朱红亮</option><option value="251" >DQA-李庆元</option><option value="9" >DQA-杨佳翼</option><option value="27" >DQA-欧计敏</option><option value="30" >DQA-程国平</option><option value="182" >DQA-程文波</option><option value="250" >DQA-苏康宇</option><option value="24" >DQA-谢颂婷</option><option value="218" >DQA-赖志霖</option><option value="260" >DQA-郭丹丹</option><option value="33" >DQA-金冰蕊</option><option value="29" >DQA-陈坚</option><option value="231" >DQA-陈敬</option><option value="255" >DQA-陈晶菊</option><option value="28" >DQA-陈黄勇</option><option value="128" >ID设计-林嘉杰</option><option value="129" >ID设计-范利</option><option value="124" >ID设计-陈波</option><option value="152" >NPI-张良兵</option><option value="135" >NPI-林华仁</option><option value="237" >PQE-廖国伟</option><option value="259" >PQE-李宝花</option><option value="243" >PQE-王国斌</option><option value="236" >PQE-王永涛</option><option value="258" >PQE-盛思</option><option value="14" >产品中心-焦志刚</option><option value="142" >光机部-何敏</option><option value="146" >光机部-刘胜</option><option value="189" >光机部-周滔</option><option value="163" >客户服务-彭拥政</option><option value="147" >客户服务-杨芳军</option><option value="166" >客户服务-甘杰</option><option value="167" >客户服务-田靓</option><option value="168" >客户服务-肖刚</option><option value="169" >客户服务-莫飞</option><option value="137" >工程部-李明</option><option value="133" >工程部-王绍刚</option><option value="148" >工程部-程军</option><option value="136" >工程部-韦瑞</option><option value="267" >师文健</option><option value="40" >战略业务-朱莹</option><option value="191" >整机工程-刘俊楠</option><option value="208" >整机工程-李亮</option><option value="7" >整机工程-黄旻</option><option value="183" >热设计-崔彦洲</option><option value="178" >热设计-朱习剑</option><option value="175" >热设计-谭亮</option><option value="249" >热设计-陶自为</option><option value="215" >研发管理-朱静</option><option value="13" >研发管理-王军</option><option value="58" >硬件-刘岸军</option><option value="261" >硬件-唐云飞</option><option value="187" >硬件-李鹏</option><option value="256" >硬件-杨岭</option><option value="79" >硬件-江浩</option><option value="132" >硬件-覃锋</option><option value="80" >硬件-詹春华</option><option value="74" >硬件-邹立波</option><option value="130" >硬件-黄国生</option><option value="21" >许博</option><option value="239" >质量部-周郑东</option><option value="238" >质量部-范小燕</option><option value="41" >软件-刘珊珊</option><option value="217" >软件-彭冬青</option><option value="43" >软件-李伟</option><option value="103" >软件-许阳</option><option value="52" >软件-赵庆威</option><option value="194" >软件-鄢圣巍</option><option value="190" >软件-陆贵昌</option><option value="42" >软件-韩运起</option><option value="36" >项目管理-孙露璐</option><option value="171" >项目管理-李冬虹</option></select><input type="hidden" name="bug_id" value="19847" />
+</form>
+</td><td class="center"><form method="post" action="bug_change_status_page.php"><input type="submit" class="button" value="状态改为:" /> <select name="new_status"><option value="20"  selected="selected" >反馈</option><option value="50" >已分派</option></select><input type="hidden" name="id" value="19847" />
+</form>
+</td><td class="center"><form method="post" action="bug_monitor_add.php">
+<input type="hidden" name="bug_monitor_add_token" value="20181023f1946a720e86d6c9b2114b8aac09180f991f62d4"/>	<input type="hidden" name="bug_id" value="19847" />
+	<input type="submit" class="button" value="监视" />
+</form>
+</td><td class="center"><form method="post" action="bug_stick.php">
+<input type="hidden" name="bug_stick_token" value="201810236f0233499b3b66ef9efad34a20adc9e17f69de2b"/>	<input type="hidden" name="bug_id" value="19847" />
+	<input type="hidden" name="action" value="stick" />
+	<input type="submit" class="button" value="置顶" />
+</form>
+</td><td class="center"><form method="post" action="bug_report_page.php">
+<input type="hidden" name="bug_report_page_token" value="201810235ae51d92ae5112c71517771a2ee3f4c1e882e4be"/>	<input type="hidden" name="m_id" value="19847" />
+	<input type="submit" class="button" value="创建子问题" />
+</form>
+</td><td class="center"><form method="post" action="bug_change_status_page.php">
+<input type="hidden" name="bug_change_status_page_token" value="20181023bad837c3c2a6106fd95e349ecc940a7a074a2bbf"/>	<input type="hidden" name="id" value="19847" />
+	<input type="hidden" name="new_status" value="20" />
+	<input type="hidden" name="reopen_flag" value="1" />
+	<input type="submit" class="button" value="重启问题" />
+</form>
+</td><td class="center"></td><td class="center"></td><td class="center"></td></tr></table></td></tr></table><br />
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;关联	</td>
+</tr>
+<tr class="row-1">
+	<td class="category">新建关联</td>
+	<td>添加问题		<form method="post" action="bug_relationship_add.php">
+		<input type="hidden" name="bug_relationship_add_token" value="20181023db86b4d272347c586662ac46627736a1e6c893fb"/>		<input type="hidden" name="src_bug_id" value="19847" size="4" />
+		<select name="rel_type">
+<option value="2">子问题：</option>
+<option value="3">父问题：</option>
+<option value="0">和该问题相似：</option>
+<option value="4">近似问题：</option>
+<option value="1" selected="selected">相关问题：</option>
+</select>
+		<input type="text" name="dest_bug_id" value="" />
+		<input type="submit" name="add_relationship" class="button" value="添加" />
+		</form>
+	</td></tr>
+<tr>
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;关联	</td>
+</tr>
+</table>
+
+</div><br />
+
+<div id="upload_form_open"><form method="post" enctype="multipart/form-data" action="bug_file_add.php">
+<input type="hidden" name="bug_file_add_token" value="20181023b15003da587263bb70b90055d0d093a65bfe99b4"/>
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'upload_form' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;上传文件	</td>
+</tr>
+<tr class="row-1">
+	<td class="category" width="15%">
+		选择文件<br />
+		<span class="small">(最大大小: 50,000k)</span>	</td>
+	<td width="85%">
+		<input type="hidden" name="bug_id" value="19847" />
+		<input type="hidden" name="max_file_size" value="50000000" />
+		<input id="ufile[]" name="ufile[]" type="file" size="50" />
+		<input type="submit" class="button"
+			value="上传文件"
+		/>
+	</td>
+</tr>
+</table>
+</form>
+</div><div id="upload_form_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'upload_form' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;上传文件	</td>
+</tr>
+</table>
+
+</div><a name="monitors" id="monitors" /><br /><div id="monitoring_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'monitoring' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;		正在监视该问题的用户	</td>
+</tr>
+<tr class="row-1">
+	<td class="category" width="15%">
+		用户列表	</td>
+	<td>
+当前没有用户监视这个问题。<br /><br />帐号		<form method="get" action="bug_monitor_add.php">
+		<input type="hidden" name="bug_monitor_add_token" value="20181023a5d49687272aa31a8ec89b801931e253bb0b691d"/>			<input type="hidden" name="bug_id" value="19847" />
+			<input type="text" name="username" />
+			<input type="submit" class="button" value="添加" />
+		</form>
+			</td>
+</tr>
+</table>
+</div><div id="monitoring_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2"><a href="" onclick="ToggleDiv( 'monitoring' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;		正在监视该问题的用户	</td>
+</tr>
+</table>
+</div>
+
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;		问题注释	</td>
+</tr>
+<tr>
+	<td class="center" colspan="2">
+		这个问题没有注释信息	</td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" class="hidden">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;		问题注释	</td>
+</tr>
+</table>
+</div><a name="addbugnote"></a> <br />
+
+<div id="bugnote_add_open"><form name="bugnoteadd" method="post" action="bugnote_add.php">
+<input type="hidden" name="bugnote_add_token" value="20181023bca1a29fba1ac0f105dcbd856bd232b9652770b8"/><input type="hidden" name="bug_id" value="19847" />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnote_add' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;添加注释	</td>
+</tr>
+<tr class="row-2">
+	<td class="category" width="25%">
+		问题注释	</td>
+	<td width="75%">
+		<textarea name="bugnote_text" cols="80" rows="10"></textarea>
+	</td>
+</tr>
+<tr class="row-1">
+	<td class="category">
+		查看权限	</td>
+	<td>
+			<input type="checkbox" name="private"  />
+私有	</td>
+</tr>
+
+
+<tr>
+	<td class="center" colspan="2">
+		<input type="submit" class="button" value="添加注释"  onclick="this.disabled=1;document.bugnoteadd.submit();" />
+	</td>
+</tr>
+</table>
+</form>
+</div><div id="bugnote_add_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+	<a href="" onclick="ToggleDiv( 'bugnote_add' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;添加注释	</td>
+</tr>
+</table>
+</div>
+
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&#160;问题历史	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		日期	</td>
+	<td class="small-caption">
+		帐号	</td>
+	<td class="small-caption">
+		事件	</td>
+	<td class="small-caption">
+		修订	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-06-25 16:49	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=3">DQA-吴丹阳</a>	</td>
+	<td class="small-caption">
+		新建问题	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-06-25 16:49	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=3">DQA-吴丹阳</a>	</td>
+	<td class="small-caption">
+		状态	</td>
+	<td class="small-caption">
+		新建 =&gt; 已分派	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-06-25 16:49	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=3">DQA-吴丹阳</a>	</td>
+	<td class="small-caption">
+		分派给	</td>
+	<td class="small-caption">
+		 =&gt; 软件-许阳	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		问题发生位置（1级）	</td>
+	<td class="small-caption">
+		 =&gt; 选择重写Bootloader升级设置，从TI5.0平台软件升级到TI8.0平台后，机器挂掉	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		问题发生位置（2级）	</td>
+	<td class="small-caption">
+		 =&gt; 跨平台烧录	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		原因分析	</td>
+	<td class="small-caption">
+		 =&gt; 擦除Bootloader时候，扇区大小设置存在问题	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		解决对策	</td>
+	<td class="small-caption">
+		 =&gt; 修改擦除Bootloader时候，扇区大小为8kb	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		状态	</td>
+	<td class="small-caption">
+		已分派 =&gt; 已解决	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-06-29 10:51	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=103">软件-许阳</a>	</td>
+	<td class="small-caption">
+		处理状况	</td>
+	<td class="small-caption">
+		未处理 =&gt; 已修正	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-07-23 10:29	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=3">DQA-吴丹阳</a>	</td>
+	<td class="small-caption">
+		状态	</td>
+	<td class="small-caption">
+		已解决 =&gt; 已关闭	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-07-23 10:29	</td>
+	<td class="small-caption">
+		<a href="http://172.32.252.27/mantisbt/view_user_page.php?id=3">DQA-吴丹阳</a>	</td>
+	<td class="small-caption">
+		修正版本	</td>
+	<td class="small-caption">
+		 =&gt; 配置V3.6.180628	</td>
+</tr>
+</table>
+</div><div id="history_closed" class="hidden"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&#160;问题历史	</td>
+</tr>
+</table>
+
+</div>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2018 MantisBT Team</address>
+	<address><a href="mailto:hlzhu@appotronics.cn">hlzhu@appotronics.cn</a></address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/mantisbt/images/mantis_logo.png" width="145" height="50" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>
